@@ -36,41 +36,40 @@ describe "/categories", type: :request do
   describe "PATCH" do
     context "with valid parameters" do
 
-      it "updates the requested category" do
-        category = Category.create!(:name=> "Theme")
-        patch category_url(category), params: { name: "new theme" }
+      it "updates the requested category and redirects" do
+        category = Category.create!(:name => "Theme")
+        patch category_url(category), params:{ category: { name: "new theme" } }
+
+        expect(category.name) == "new theme"
         expect(response).to be_redirect
       end
     end
   end
 
-  # describe "POST /create" do
-  #   context "with valid parameters" do
-  #     it "creates a new Category" do
-  #       expect {
-  #         post categories_url, params: { category: valid_attributes }
-  #       }.to change(Category, :count).by(1)
-  #     end
+  describe "POST /create" do
+    context "with valid parameters" do
+      it "creates a new Category and increase Category count by 1" do
+        expect {
+          post categories_url, params: { category: { name: "new theme" } }
+        }.to change(Category, :count).by(+1)
+          # expect(response).to have_http_status(:created)
+      end
 
-  #     it "redirects to the created category" do
-  #       post categories_url, params: { category: valid_attributes }
-  #       expect(response).to redirect_to(category_url(Category.last))
-  #     end
-  #   end
+      it "redirects to the created category" do
+        post categories_url, params: { category: { name: "new theme" } }
+        expect(response).to redirect_to(category_url(Category.last))
+      end
+    end
+ 
 
-  #   context "with invalid parameters" do
-  #     it "does not create a new Category" do
-  #       expect {
-  #         post categories_url, params: { category: invalid_attributes }
-  #       }.to change(Category, :count).by(0)
-  #     end
-
-  #     it "renders a successful response (i.e. to display the 'new' template)" do
-  #       post categories_url, params: { category: invalid_attributes }
-  #       expect(response).to be_successful
-  #     end
-  #   end
-  # end
+    context "with invalid parameters" do
+      it "does not create a new Category" do
+        expect {
+          post categories_url, params: { category: {name: nil} }
+        }.to change(Category, :count).by(0)
+      end
+    end
+  end
 
 
 
