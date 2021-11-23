@@ -2,6 +2,7 @@
 
 describe "/categories", type: :request do
 
+  # Test to get the root page of Category with successful response
   describe "get /index" do
     it "shows the index page" do
       get categories_path
@@ -9,30 +10,26 @@ describe "/categories", type: :request do
     end
   end
 
+  # Test to request show of creating new category page
   describe "get /new" do
     it "shows the create new category page" do
-      # category = Category.create!(:name=> "sample category")
-
       get new_category_path
+
       expect(response).to have_http_status(200)
     end
   end
 
-  # describe "creating and saving new category" do
-  #   it "creates new category and adds to existing count" do
-        # post and save new category
-  #   end
-  # end
-
+  # Test to show the page of a category based on id
   describe "get /show" do
     it "renders the category based on id" do
       category = Category.create!(:name=> "Theme")
-
       get "/categories/#{category.id}"
+
       expect(response).to have_http_status(200)
     end
   end
 
+  # Test to update the category and redirects after
   describe "PATCH" do
     context "with valid parameters" do
 
@@ -46,22 +43,24 @@ describe "/categories", type: :request do
     end
   end
 
+  # Test on creating or posting new category
   describe "POST /create" do
     context "with valid parameters" do
       it "creates a new Category and increase Category count by 1" do
+
         expect {
           post categories_url, params: { category: { name: "new theme" } }
         }.to change(Category, :count).by(+1)
-          # expect(response).to have_http_status(:created)
       end
 
       it "redirects to the created category" do
         post categories_url, params: { category: { name: "new theme" } }
+
         expect(response).to redirect_to(category_url(Category.last))
       end
     end
  
-
+    # Considering invalid input of nil
     context "with invalid parameters" do
       it "does not create a new Category" do
         expect {
@@ -71,6 +70,7 @@ describe "/categories", type: :request do
     end
   end
 
+  #Test on deleting the category -> decreasing number of Category count
   describe "DELETE /destroy" do
     it "destroys the requested category" do
       category = Category.create!(:name=> "To be deleted")
