@@ -71,22 +71,18 @@ describe "/categories", type: :request do
     end
   end
 
+  describe "DELETE /destroy" do
+    it "destroys the requested category" do
+      category = Category.create!(:name=> "To be deleted")
+      expect {
+        delete category_url(category)
+      }.to change(Category, :count).by(-1)
+    end
 
-
-  
-
-  # describe "DELETE /destroy" do
-  #   it "destroys the requested category" do
-  #     category = Category.create! valid_attributes
-  #     expect {
-  #       delete category_url(category)
-  #     }.to change(Category, :count).by(-1)
-  #   end
-
-  #   it "redirects to the categories list" do
-  #     category = Category.create! valid_attributes
-  #     delete category_url(category)
-  #     expect(response).to redirect_to(categories_url)
-  #   end
-  # end
+    it "redirects to the categories list" do
+      category = Category.create!(:name=> "To be deleted")
+      delete category_url(category)
+      expect(response).to redirect_to(categories_url)
+    end
+  end
 end
