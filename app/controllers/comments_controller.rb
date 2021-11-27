@@ -18,6 +18,14 @@ class CommentsController < ApplicationController
         end
     end
 
+    def show
+        @comment = Comment.find(params[:id])
+    end
+
+    def edit
+        @comment = Comment.find(params[:id])
+    end
+
     private
 
     def get_article

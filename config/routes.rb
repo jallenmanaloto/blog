@@ -4,5 +4,5 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  # get '/' => 'categories#index'
+  get '/' => 'categories#index'
 end
