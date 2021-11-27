@@ -29,7 +29,7 @@ class CommentsController < ApplicationController
     private
 
     def get_article
-        @article Article.find(params[:article_id])
+        @article = Article.find(params[:article_id])
     end
 
     def comment_params
