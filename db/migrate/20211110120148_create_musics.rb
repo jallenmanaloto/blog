@@ -1,7 +1,8 @@
 class CreateMusics < ActiveRecord::Migration[6.1]
   def change
     create_table :musics do |t|
-      add_column :title, :body, :string
+      t.string :title
+      t.string :body
       t.timestamps
     end
   end
