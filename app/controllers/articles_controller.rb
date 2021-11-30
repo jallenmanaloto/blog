@@ -16,11 +16,15 @@ class ArticlesController < ApplicationController
     def create
         @article = Article.new(article_params)
 
-        if @article.save
-            redirect_to articles_path
-        else
-            render :new
-        end
+        respond_to do |format|
+            if @article.save
+              format.html { redirect_to @article, notice: "Category was successfully created." }
+              format.json { render :show, status: :created, location: @article }
+            else
+              format.html { render :new, status: :unprocessable_entity }
+              format.json { render json: @article.errors, status: :unprocessable_entity }
+            end
+          end
     end
 
     def edit

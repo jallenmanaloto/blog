@@ -3320,3 +3320,1356 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 2.1ms | Allocations: 4459)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTasks (20211127042202)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (34.7ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "category_id" integer, "name" character varying, "body" character varying, "task_date" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211127042202"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-11-27 12:33:03 +0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.4ms | Allocations: 270)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1249)
+
+
+Started GET "/categories" for ::1 at 2021-11-27 12:33:05 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.1ms | Allocations: 27015)
+Completed 200 OK in 86ms (Views: 78.7ms | ActiveRecord: 2.1ms | Allocations: 29803)
+
+
+Started GET "/categories" for ::1 at 2021-11-27 12:33:06 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 908)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4038)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.1ms | Allocations: 4564)
+
+
+Started GET "/categories/new" for ::1 at 2021-11-27 12:33:08 +0800
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 8.6ms | Allocations: 2894)
+  Rendered categories/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3288)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 6551)
+Completed 200 OK in 29ms (Views: 15.0ms | ActiveRecord: 8.6ms | Allocations: 9822)
+
+
+Started GET "/" for ::1 at 2021-11-29 19:38:20 +0800
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 495)
+Completed 200 OK in 22ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3688)
+
+
+Started GET "/" for ::1 at 2021-11-29 19:38:21 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.0ms | Allocations: 1017)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 2223)
+
+
+Started GET "/categories" for ::1 at 2021-11-29 19:38:24 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (4.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 20550)
+Completed 200 OK in 109ms (Views: 71.3ms | ActiveRecord: 4.2ms | Allocations: 24037)
+
+
+Started GET "/categories" for ::1 at 2021-11-29 19:38:25 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4036)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 1.4ms | Allocations: 4581)
+
+
+Started GET "/categories/new" for ::1 at 2021-11-29 19:38:27 +0800
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 10.1ms | Allocations: 2901)
+  Rendered categories/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 3314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 6577)
+Completed 200 OK in 40ms (Views: 20.9ms | ActiveRecord: 10.9ms | Allocations: 10233)
+
+
+Started POST "/categories" for ::1 at 2021-11-29 19:38:33 +0800
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Coding"}, "commit"=>"Create Category"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 977)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Category.):
+  
+app/controllers/categories_controller.rb:21:in `create'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/categories" for ::1 at 2021-11-29 19:41:41 +0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4311)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 1.7ms | Allocations: 6374)
+
+
+Started GET "/categories/new" for ::1 at 2021-11-29 19:41:42 +0800
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 2.6ms | Allocations: 798)
+  Rendered categories/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4037)
+Completed 200 OK in 20ms (Views: 8.5ms | ActiveRecord: 5.9ms | Allocations: 7020)
+
+
+Started POST "/categories" for ::1 at 2021-11-29 19:41:45 +0800
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Coding"}, "commit"=>"Create Category"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 828)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Category.):
+  
+app/controllers/categories_controller.rb:21:in `create'
+Started GET "/categories" for ::1 at 2021-11-29 19:41:59 +0800
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1639)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9090)
+Completed 200 OK in 32ms (Views: 19.5ms | ActiveRecord: 1.5ms | Allocations: 14840)
+
+
+Started GET "/categories/new" for ::1 at 2021-11-29 19:42:00 +0800
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 5.5ms | Allocations: 2903)
+  Rendered categories/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6581)
+Completed 200 OK in 29ms (Views: 13.6ms | ActiveRecord: 8.5ms | Allocations: 10263)
+
+
+Started POST "/categories" for ::1 at 2021-11-29 19:42:02 +0800
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Coding"}, "commit"=>"Create Category"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 989)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Category.):
+  
+app/controllers/categories_controller.rb:21:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTasks (20211127042202)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.8ms)[0m  [1m[35mDROP TABLE "tasks"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211127042202"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTasks (20211127042202)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (27.8ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "category_id" integer, "name" character varying, "body" character varying, "task_date" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211127042202"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/categories" for ::1 at 2021-11-29 19:48:22 +0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Coding"}, "commit"=>"Create Category"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3475)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Category.):
+  
+app/controllers/categories_controller.rb:21:in `create'
+Started GET "/categories" for ::1 at 2021-11-29 19:48:24 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4539)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 1.4ms | Allocations: 5353)
+
+
+Started GET "/categories/new" for ::1 at 2021-11-29 19:48:25 +0800
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 3.6ms | Allocations: 795)
+  Rendered categories/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4625)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 5165)
+
+
+Started POST "/categories" for ::1 at 2021-11-29 19:48:27 +0800
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Coding"}, "commit"=>"Create Category"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 762)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Category.):
+  
+app/controllers/categories_controller.rb:21:in `create'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTasks (20211127042202)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "tasks"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211127042202"]]
+  [1m[36mTRANSACTION (97.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20211112815625)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20201112815625)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20211126115718)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211126115718"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20201112815625)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (53.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hello_postgresql"[0m
+  [1m[35m (60.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hello_test"[0m
+  [1m[35m (763.9ms)[0m  [1m[35mCREATE DATABASE "hello_postgresql" ENCODING = 'unicode'[0m
+  [1m[35m (566.0ms)[0m  [1m[35mCREATE DATABASE "hello_test" ENCODING = 'unicode'[0m
+  [1m[35m (25.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (19.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20201112815625)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201112815625"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGames (20211106035128)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "name" character varying, "platform" character varying, "price" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211106035128"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateArticles (20211109115040)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "name" character varying, "body" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211109115040"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMusics (20211110120148)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.5ms)[0m  [1m[35mCREATE TABLE "musics" ("id" bigserial primary key, "title" character varying, "body" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211110120148"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMaestros (20211110125130)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.9ms)[0m  [1m[35mCREATE TABLE "maestros" ("id" bigserial primary key, "name" character varying, "musics" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211110125130"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20211126115718)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" character varying, "article_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211126115718"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTasks (20211127042202)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.3ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "category_id" integer, "name" character varying, "body" character varying, "task_date" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211127042202"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-29 12:17:09.360262"], ["updated_at", "2021-11-29 12:17:09.360262"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnToCategories (20211129122259)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "categories" ADD "name" character varying[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20211129122738)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211129122738"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/categories" for ::1 at 2021-11-29 20:28:38 +0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1024)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4371)
+Completed 200 OK in 20ms (Views: 14.1ms | ActiveRecord: 1.8ms | Allocations: 5955)
+
+
+Started GET "/categories/new" for ::1 at 2021-11-29 20:28:39 +0800
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 2.8ms | Allocations: 799)
+  Rendered categories/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 4214)
+Completed 200 OK in 44ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 6609)
+
+
+Started POST "/categories" for ::1 at 2021-11-29 20:28:41 +0800
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Coding"}, "commit"=>"Create Category"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 828)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Category.):
+  
+app/controllers/categories_controller.rb:21:in `create'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-11-29 20:31:26 +0800
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.3ms | Allocations: 495)
+Completed 200 OK in 17ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3809)
+
+
+Started GET "/" for ::1 at 2021-11-29 20:31:27 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.0ms | Allocations: 511)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 1775)
+
+
+Started GET "/categories" for ::1 at 2021-11-29 20:31:29 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1577)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 8991)
+Completed 200 OK in 38ms (Views: 31.7ms | ActiveRecord: 3.0ms | Allocations: 11301)
+
+
+Started GET "/categories" for ::1 at 2021-11-29 20:31:30 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4040)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 2.9ms | Allocations: 4566)
+
+
+Started GET "/categories/new" for ::1 at 2021-11-29 20:31:32 +0800
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 8.6ms | Allocations: 2803)
+  Rendered categories/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 6481)
+Completed 200 OK in 55ms (Views: 21.6ms | ActiveRecord: 13.7ms | Allocations: 10996)
+
+
+Started POST "/categories" for ::1 at 2021-11-29 20:31:34 +0800
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Coding"}, "commit"=>"Create Category"}
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/categories_controller.rb:24:in `block in create'
+  [1m[36mCategory Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "Coding"], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:24:in `block in create'
+  [1m[36mCategory Create (3.0ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Coding"], ["created_at", "2021-11-29 12:31:34.317197"], ["updated_at", "2021-11-29 12:31:34.317197"]]
+  ↳ app/controllers/categories_controller.rb:24:in `block in create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/categories_controller.rb:24:in `block in create'
+Redirected to http://localhost:3000/categories/1
+Completed 302 Found in 33ms (ActiveRecord: 12.0ms | Allocations: 5487)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-29 20:31:34 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3521)
+Completed 200 OK in 23ms (Views: 12.9ms | ActiveRecord: 2.9ms | Allocations: 5349)
+
+
+Started GET "/categories" for ::1 at 2021-11-29 20:31:39 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (4.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1511)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 4754)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 4.3ms | Allocations: 5230)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-29 20:31:44 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 3817)
+Completed 200 OK in 42ms (Views: 28.6ms | ActiveRecord: 2.0ms | Allocations: 4968)
+
+
+Started GET "/" for ::1 at 2021-11-30 13:02:04 +0800
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.0ms | Allocations: 495)
+Completed 200 OK in 20ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 3688)
+
+
+Started GET "/" for ::1 at 2021-11-30 13:02:04 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.0ms | Allocations: 513)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1727)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:02:08 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (4.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 30.0ms | Allocations: 4561)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 12017)
+Completed 200 OK in 72ms (Views: 42.5ms | ActiveRecord: 16.4ms | Allocations: 15537)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:02:09 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4590)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 2.1ms | Allocations: 5141)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:04:08 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 324)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3652)
+Completed 200 OK in 32ms (Views: 9.5ms | ActiveRecord: 9.3ms | Allocations: 10015)
+
+
+Started GET "/categories/1/edit" for ::1 at 2021-11-30 13:04:11 +0800
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 15.9ms | Allocations: 2801)
+  Rendered categories/edit.html.erb within layouts/application (Duration: 19.2ms | Allocations: 3342)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 6612)
+Completed 200 OK in 45ms (Views: 29.0ms | ActiveRecord: 3.8ms | Allocations: 8620)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:04:13 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 4867)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 2.5ms | Allocations: 5401)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:09:21 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 3835)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 7175)
+Completed 200 OK in 28ms (Views: 15.2ms | ActiveRecord: 9.4ms | Allocations: 9238)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:09:26 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3339)
+Completed 200 OK in 36ms (Views: 17.0ms | ActiveRecord: 3.0ms | Allocations: 5229)
+
+
+Started GET "/categories/adsf" for ::1 at 2021-11-30 13:10:00 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"adsf"}
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+Completed 404 Not Found in 7ms (ActiveRecord: 2.0ms | Allocations: 1332)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=adsf):
+  
+app/controllers/categories_controller.rb:59:in `set_category'
+Started GET "/adsfa" for ::1 at 2021-11-30 13:10:03 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/adsfa"):
+  
+Started GET "/adsfa" for ::1 at 2021-11-30 13:11:13 +0800
+  
+SyntaxError (/home/jallen/codes/Blog/hello/config/routes.rb:9: syntax error, unexpected end-of-input, expecting `end'):
+  
+config/routes.rb:9: syntax error, unexpected end-of-input, expecting `end'
+config/routes.rb:9: syntax error, unexpected end-of-input, expecting `end'
+config/routes.rb:9: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-11-30 13:11:16 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/categories" for ::1 at 2021-11-30 13:11:22 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/categories"):
+  
+Started GET "/categories" for ::1 at 2021-11-30 13:11:26 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/categories"):
+  
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5696131059134119800)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5696131059134119800)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-11-30 13:12:28 +0800
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.5ms | Allocations: 495)
+Completed 200 OK in 16ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3809)
+
+
+Started GET "/" for ::1 at 2021-11-30 13:12:28 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.8ms | Allocations: 571)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 1804)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:12:32 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 26.7ms | Allocations: 4549)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 11963)
+Completed 200 OK in 82ms (Views: 35.7ms | ActiveRecord: 13.5ms | Allocations: 15522)
+
+
+Started GET "/categories/cacacaca" for ::1 at 2021-11-30 13:12:37 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"cacacaca"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+Completed 404 Not Found in 11ms (ActiveRecord: 3.1ms | Allocations: 2385)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=cacacaca):
+  
+app/controllers/categories_controller.rb:59:in `set_category'
+Started GET "/caaaaaa" for ::1 at 2021-11-30 13:12:41 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/caaaaaa"):
+  
+Started GET "/categories" for ::1 at 2021-11-30 13:12:55 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4424)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 2.8ms | Allocations: 4946)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:12:57 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3375)
+Completed 200 OK in 26ms (Views: 13.7ms | ActiveRecord: 2.5ms | Allocations: 4801)
+
+
+Started GET "/articles" for ::1 at 2021-11-30 13:16:26 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4674)
+Completed 200 OK in 30ms (Views: 20.1ms | ActiveRecord: 2.6ms | Allocations: 6999)
+
+
+Started GET "/articles" for ::1 at 2021-11-30 13:16:26 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4021)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 2.1ms | Allocations: 4529)
+
+
+Started GET "/articles/new" for ::1 at 2021-11-30 13:16:29 +0800
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 23.3ms | Allocations: 4523)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4591)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 12.1ms | Allocations: 8527)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_article_path' for #<ActionView::Base:0x000000000098f8>):
+    1: <%= form_with scope: :article, url: create_article_path, local: true do |f| %>
+    2: 
+    3:     <p>
+    4:         <% if @article.errors.any? %>
+  
+app/views/articles/new.html.erb:1
+Started GET "/articles" for ::1 at 2021-11-30 13:16:33 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 4041)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 1.8ms | Allocations: 4498)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:18:40 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 4982)
+Completed 200 OK in 33ms (Views: 28.0ms | ActiveRecord: 2.0ms | Allocations: 6327)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:18:40 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1013)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 4143)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 1.8ms | Allocations: 4669)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:18:44 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3451)
+Completed 200 OK in 32ms (Views: 15.0ms | ActiveRecord: 3.7ms | Allocations: 5243)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:19:04 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3835)
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 1.1ms | Allocations: 5872)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-11-30 13:19:33 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 761)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  
+app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+Started GET "/categories/1/" for ::1 at 2021-11-30 13:25:00 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:59:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3534)
+Completed 200 OK in 61ms (Views: 12.1ms | ActiveRecord: 20.2ms | Allocations: 11687)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:26:55 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 4252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 7599)
+Completed 200 OK in 30ms (Views: 14.8ms | ActiveRecord: 10.9ms | Allocations: 9824)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:26:55 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1005)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4133)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 2.2ms | Allocations: 4644)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:26:57 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (5.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3538)
+Completed 200 OK in 48ms (Views: 17.8ms | ActiveRecord: 5.6ms | Allocations: 8178)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:34:46 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 34.1ms | Allocations: 4848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 8387)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 18.0ms | Allocations: 9800)
+
+
+Started GET "/categories" for ::1 at 2021-11-30 13:34:46 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1005)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4133)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 2.5ms | Allocations: 4648)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:34:48 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1656)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1725)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 6.9ms | Allocations: 3798)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     </thead>
+    12: 
+    13:     <tbody>
+    14:         <% @tasks.each do |task| %>
+    15:             <tr>
+    16:                 <td><%= task.id %></td>
+    17:                 <td><%= task.body %></td>
+  
+app/views/categories/show.html.erb:14
+Started GET "/categories/1" for ::1 at 2021-11-30 13:35:38 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/categories/show.html.erb:14
+  Rendered categories/show.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 5996)
+Completed 200 OK in 45ms (Views: 17.5ms | ActiveRecord: 16.2ms | Allocations: 12718)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:39:43 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/categories/show.html.erb:14
+  Rendered tasks/_index.html.erb (Duration: 1.3ms | Allocations: 213)
+  Rendered categories/show.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 5265)
+Completed 200 OK in 37ms (Views: 22.5ms | ActiveRecord: 5.2ms | Allocations: 7436)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:39:56 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 6.0ms | Allocations: 1156)
+  Rendered categories/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5183)
+Completed 200 OK in 23ms (Views: 14.2ms | ActiveRecord: 3.7ms | Allocations: 7308)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 13:41:24 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (2.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 7.0ms | Allocations: 1244)
+  Rendered categories/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1699)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 5217)
+Completed 200 OK in 34ms (Views: 20.2ms | ActiveRecord: 4.2ms | Allocations: 7342)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 13:41:27 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 754)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  
+app/controllers/tasks_controller.rb:32:in `get_category'
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 13:45:41 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (2.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 9.1ms | Allocations: 3651)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4030)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4104)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 15.0ms | Allocations: 15578)
+
+
+  
+ActionView::Template::Error (undefined method `tasks_path' for #<ActionView::Base:0x00000000012098>
+Did you mean?  asset_path):
+    1: <%= form_with(model: task) do |form| %>
+    2:   <% if task.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
+  
+app/views/tasks/_form.html.erb:1
+app/views/tasks/new.html.erb:3
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 13:49:56 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+Completed 404 Not Found in 11ms (ActiveRecord: 3.7ms | Allocations: 2537)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  
+app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 13:57:53 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+Completed 404 Not Found in 2ms (Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  
+app/controllers/tasks_controller.rb:32:in `get_category'
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 13:58:15 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.4ms | Allocations: 1313)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1676)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1751)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 26.2ms | Allocations: 16224)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with model: [@category, @task], local: true do |f| %>
+  <p>
+    <% if @task.errors.any? %>
+      <ul>
+        <% @task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      </ul>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.label :body %><br/>
+    <%= f.text_field :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+):
+1:    <%= form_with model: [@category, @task], local: true do |f| %>
+2:      <p>
+3:        <% if @task.errors.any? %>
+4:          <ul>
+5:            <% @task.errors.full_messages.each do |message| %>
+6:            <li><%= message %></li>
+7:          </ul>
+8:        <% end %>
+9:      </p>
+10:    
+11:      <p>
+12:        <%= f.label :body %><br/>
+13:        <%= f.text_field :body %>
+14:      </p>
+15:      <p>
+16:        <%= f.submit %>
+17:      </p>
+18:    <% end %>
+  
+app/views/tasks/_form.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/_form.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/_form.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/_form.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/_form.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/_form.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/new.html.erb:3
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 13:59:19 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (3.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 20.1ms | Allocations: 5397)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 36.6ms | Allocations: 9824)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 9898)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 3.3ms | Allocations: 12270)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks_path' for #<ActionView::Base:0x00000000016788>
+Did you mean?  asset_path):
+    2: 
+    3: <%= render 'form', task: @task %>
+    4: 
+    5: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/new.html.erb:5
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 13:59:42 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.8ms | Allocations: 922)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4795)
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 1.0ms | Allocations: 7212)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 14:00:25 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.2ms | Allocations: 952)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4803)
+Completed 200 OK in 23ms (Views: 15.2ms | ActiveRecord: 1.6ms | Allocations: 7211)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 14:01:13 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.1ms | Allocations: 924)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4823)
+Completed 200 OK in 23ms (Views: 14.6ms | ActiveRecord: 1.8ms | Allocations: 7230)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-11-30 14:01:15 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (6.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1388)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 4539)
+Completed 200 OK in 43ms (Views: 19.3ms | ActiveRecord: 9.2ms | Allocations: 6496)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 14:01:18 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (2.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.7ms | Allocations: 513)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 3916)
+Completed 200 OK in 40ms (Views: 22.7ms | ActiveRecord: 2.8ms | Allocations: 5669)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-11-30 14:01:30 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Coding Journal App"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (49.4ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "Coding Journal App"], ["created_at", "2021-11-30 06:01:30.536846"], ["updated_at", "2021-11-30 06:01:30.536846"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (14.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 67.3ms | Allocations: 7020)
+
+
+  
+NameError (undefined local variable or method `redirect_to_category_tasks_path' for #<TasksController:0x000000000170c0>):
+  
+app/controllers/tasks_controller.rb:15:in `create'
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 14:02:10 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.9ms | Allocations: 513)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 644)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3780)
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 1.3ms | Allocations: 5096)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 14:02:28 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (2.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.3ms | Allocations: 924)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4844)
+Completed 200 OK in 23ms (Views: 14.6ms | ActiveRecord: 2.3ms | Allocations: 7047)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-11-30 14:02:32 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Coding Journal App"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (2.0ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "Coding Journal App"], ["created_at", "2021-11-30 06:02:32.704187"], ["updated_at", "2021-11-30 06:02:32.704187"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 12.1ms | Allocations: 6573)
+
+
+  
+NameError (undefined local variable or method `redirect_to_category_tasks_path' for #<TasksController:0x00000000017660>):
+  
+app/controllers/tasks_controller.rb:15:in `create'
+Started GET "/categories/1/" for ::1 at 2021-11-30 14:05:11 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 26.6ms | Allocations: 5799)
+  Rendered categories/show.html.erb within layouts/application (Duration: 28.2ms | Allocations: 6274)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 9547)
+Completed 200 OK in 71ms (Views: 30.0ms | ActiveRecord: 23.3ms | Allocations: 16478)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-11-30 14:05:17 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (3.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 5.2ms | Allocations: 827)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 993)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4443)
+Completed 200 OK in 37ms (Views: 18.4ms | ActiveRecord: 3.4ms | Allocations: 6992)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-11-30 14:05:22 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Another task"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (2.6ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "Another task"], ["created_at", "2021-11-30 06:05:22.572756"], ["updated_at", "2021-11-30 06:05:22.572756"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Redirected to http://localhost:3000/categories/1
+Completed 302 Found in 29ms (ActiveRecord: 12.2ms | Allocations: 3884)
+
+
+Started GET "/categories/1" for ::1 at 2021-11-30 14:05:22 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 6.7ms | Allocations: 927)
+  Rendered categories/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1081)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4209)
+Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 3.9ms | Allocations: 5399)
+
+
