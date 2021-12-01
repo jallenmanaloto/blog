@@ -4673,3 +4673,2580 @@ Processing by CategoriesController#show as HTML
 Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 3.9ms | Allocations: 5399)
 
 
+Started GET "/categories/" for ::1 at 2021-11-30 14:14:10 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 37.3ms | Allocations: 4684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 7832)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 18.4ms | Allocations: 8444)
+
+
+Started GET "/" for ::1 at 2021-12-01 13:00:02 +0800
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 495)
+Completed 200 OK in 21ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3688)
+
+
+Started GET "/" for ::1 at 2021-12-01 13:00:02 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jallen/.asdf/installs/ruby/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.4ms | Allocations: 622)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 1783)
+
+
+Started GET "/categories" for ::1 at 2021-12-01 13:00:05 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (4.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 24.4ms | Allocations: 4561)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 12017)
+Completed 200 OK in 62ms (Views: 41.2ms | ActiveRecord: 13.1ms | Allocations: 15507)
+
+
+Started GET "/categories" for ::1 at 2021-12-01 13:00:06 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4142)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 1.3ms | Allocations: 4693)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:00:07 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 23.2ms | Allocations: 6904)
+  Rendered categories/show.html.erb within layouts/application (Duration: 25.1ms | Allocations: 7381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 10572)
+Completed 200 OK in 54ms (Views: 24.0ms | ActiveRecord: 13.0ms | Allocations: 16607)
+
+
+Started GET "/categories" for ::1 at 2021-12-01 13:00:47 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (13.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 43.3ms | Allocations: 1610)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 4872)
+Completed 200 OK in 68ms (Views: 52.7ms | ActiveRecord: 13.1ms | Allocations: 5418)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:00:49 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (3.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 12.4ms | Allocations: 1061)
+  Rendered categories/show.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 4361)
+Completed 200 OK in 41ms (Views: 20.7ms | ActiveRecord: 6.3ms | Allocations: 6039)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:06:35 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.1ms | Allocations: 1432)
+  Rendered categories/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1888)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5406)
+Completed 200 OK in 37ms (Views: 12.7ms | ActiveRecord: 13.1ms | Allocations: 10762)
+
+
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:06:36 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 13.1ms | Allocations: 3078)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 23.1ms | Allocations: 7072)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 7155)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 2.4ms | Allocations: 10131)
+
+
+  
+ActionView::Template::Error (undefined method `task_path' for #<ActionView::Base:0x00000000009150>
+Did you mean?  asset_path):
+    2: 
+    3: <%= render 'form', task: @task %>
+    4: 
+    5: <%= link_to 'Show', @task %> |
+    6: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/edit.html.erb:5
+Started PUT "/__web_console/repl_sessions/07e194e807c113d378b86ec50b47b384" for ::1 at 2021-12-01 13:12:07 +0800
+Started PUT "/__web_console/repl_sessions/07e194e807c113d378b86ec50b47b384" for ::1 at 2021-12-01 13:12:13 +0800
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:13:33 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 4.4ms | Allocations: 2725)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3104)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3178)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 13.4ms | Allocations: 9247)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for [#<Category id: 1, name: "Coding", created_at: "2021-11-29 12:31:34.317197000 +0000", updated_at: "2021-11-29 12:31:34.317197000 +0000">, #<Task id: 1, category_id: 1, name: nil, body: "Coding Journal App", task_date: nil, created_at: "2021-11-30 06:01:30.536846000 +0000", updated_at: "2021-11-30 06:01:30.536846000 +0000">]:Array):
+    1: <%= form_with scope: [@category, @task], local: true do |f| %>
+    2:   <p>
+    3:     <% if @task.errors.any? %>
+    4:       <ul>
+  
+app/views/tasks/_form.html.erb:1
+app/views/tasks/edit.html.erb:3
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:14:03 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.4ms | Allocations: 1390)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1765)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1840)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.5ms | Allocations: 4549)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(scope: @tasks), local: true do |f| %>
+  <p>
+    <% if @task.errors.any? %>
+      <ul>
+        <% @task.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.label :body %><br/>
+    <%= f.text_field :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+):
+1:    <%= form_with(scope: @tasks), local: true do |f| %>
+2:      <p>
+3:        <% if @task.errors.any? %>
+4:          <ul>
+5:            <% @task.errors.full_messages.each do |message| %>
+6:              <li><%= message %></li>
+7:            <% end %>
+8:          </ul>
+9:        <% end %>
+10:      </p>
+11:    
+12:      <p>
+13:        <%= f.label :body %><br/>
+14:        <%= f.text_field :body %>
+15:      </p>
+16:      <p>
+17:        <%= f.submit %>
+18:      </p>
+19:    <% end %>
+  
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/edit.html.erb:3
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:14:16 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.5ms | Allocations: 1377)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1752)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1827)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.4ms | Allocations: 4535)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(scope: @task), local: true do |f| %>
+  <p>
+    <% if @task.errors.any? %>
+      <ul>
+        <% @task.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.label :body %><br/>
+    <%= f.text_field :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+):
+1:    <%= form_with(scope: @task), local: true do |f| %>
+2:      <p>
+3:        <% if @task.errors.any? %>
+4:          <ul>
+5:            <% @task.errors.full_messages.each do |message| %>
+6:              <li><%= message %></li>
+7:            <% end %>
+8:          </ul>
+9:        <% end %>
+10:      </p>
+11:    
+12:      <p>
+13:        <%= f.label :body %><br/>
+14:        <%= f.text_field :body %>
+15:      </p>
+16:      <p>
+17:        <%= f.submit %>
+18:      </p>
+19:    <% end %>
+  
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/_form.html.erb:1: syntax error, unexpected label
+app/views/tasks/_form.html.erb:21: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/edit.html.erb:3
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:14:41 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.7ms | Allocations: 1526)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5098)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5172)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.6ms | Allocations: 7879)
+
+
+  
+ActionView::Template::Error (undefined method `task_path' for #<ActionView::Base:0x0000000000a578>
+Did you mean?  asset_path):
+    2: 
+    3: <%= render 'form', task: @task %>
+    4: 
+    5: <%= link_to 'Show', @task %> |
+    6: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/edit.html.erb:5
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:16:15 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.0ms | Allocations: 955)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 11.5ms | Allocations: 4531)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4605)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.7ms | Allocations: 7307)
+
+
+  
+ActionView::Template::Error (undefined method `task_path' for #<ActionView::Base:0x0000000000aa50>
+Did you mean?  asset_path):
+    2: 
+    3: <%= render 'form', task: @task %>
+    4: 
+    5: <%= link_to 'Show', @task %> |
+    6: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/edit.html.erb:5
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:19:48 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.8ms | Allocations: 870)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 11.3ms | Allocations: 4155)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4229)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 15.2ms | Allocations: 14754)
+
+
+  
+ActionView::Template::Error (undefined method `task_path' for #<ActionView::Base:0x0000000000c968>
+Did you mean?  asset_path):
+    2: 
+    3: <%= render 'form', task: @task %>
+    4: 
+    5: <%= link_to 'Show', @task %> |
+    6: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/edit.html.erb:5
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:20:20 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.7ms | Allocations: 952)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 14.3ms | Allocations: 5527)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 5601)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.6ms | Allocations: 8306)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks_path' for #<ActionView::Base:0x0000000000ce18>
+Did you mean?  asset_path):
+    3: <%= render 'form', task: @task %>
+    4: 
+    5: <%# <%= link_to 'Show', @task %> | %>
+    6: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/categories/1" for ::1 at 2021-12-01 13:20:23 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.5ms | Allocations: 2362)
+  Rendered categories/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6273)
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 2.1ms | Allocations: 8819)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:20:55 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 6.1ms | Allocations: 1399)
+  Rendered categories/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5396)
+Completed 200 OK in 24ms (Views: 16.3ms | ActiveRecord: 3.0ms | Allocations: 7529)
+
+
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:20:57 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (2.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.1ms | Allocations: 945)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 14.0ms | Allocations: 5521)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 5601)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 3.8ms | Allocations: 8604)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks_path' for #<ActionView::Base:0x0000000000d4f8>
+Did you mean?  asset_path):
+    3: <%= render 'form', task: @task %>
+    4: 
+    5: <%# <%= link_to 'Show', @task %> | %>
+    6: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:22:55 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.3ms | Allocations: 952)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1325)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 4839)
+Completed 200 OK in 24ms (Views: 15.0ms | ActiveRecord: 2.4ms | Allocations: 7586)
+
+
+Started PATCH "/categories/1/tasks/1" for ::1 at 2021-12-01 13:23:09 +0800
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for TasksController
+Did you mean?  create
+               edit
+               index
+               new):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/categories/1/" for ::1 at 2021-12-01 13:26:50 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 26.5ms | Allocations: 5935)
+  Rendered categories/show.html.erb within layouts/application (Duration: 29.4ms | Allocations: 6410)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 9679)
+Completed 200 OK in 70ms (Views: 31.5ms | ActiveRecord: 17.5ms | Allocations: 16603)
+
+
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:26:52 +0800
+  
+SyntaxError (/home/jallen/codes/Blog/hello/app/controllers/tasks_controller.rb:44: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/tasks_controller.rb:44: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/tasks_controller.rb:44: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/tasks_controller.rb:44: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:27:08 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (7.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.7ms | Allocations: 870)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 974)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4317)
+Completed 200 OK in 117ms (Views: 12.5ms | ActiveRecord: 19.4ms | Allocations: 14640)
+
+
+Started PATCH "/categories/1/tasks/1" for ::1 at 2021-12-01 13:27:10 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Coding Journal App"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1/tasks/1
+Completed 302 Found in 22ms (ActiveRecord: 7.0ms | Allocations: 5713)
+
+
+Started GET "/categories/1/tasks/1" for ::1 at 2021-12-01 13:27:10 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 4188)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4256)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.2ms | Allocations: 6096)
+
+
+  
+ActionView::Template::Error (undefined method `edit_task_path' for #<ActionView::Base:0x00000000011850>
+Did you mean?  edit_article_path):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <%= link_to 'Edit', edit_task_path(@task) %> |
+    4: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/show.html.erb:3
+Started GET "/categories/1/tasks/1" for ::1 at 2021-12-01 13:27:37 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3767)
+Completed 200 OK in 18ms (Views: 9.4ms | ActiveRecord: 2.2ms | Allocations: 6362)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:27:41 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 10.8ms | Allocations: 1663)
+  Rendered categories/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 5440)
+Completed 200 OK in 29ms (Views: 21.7ms | ActiveRecord: 2.2ms | Allocations: 7975)
+
+
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:27:42 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.6ms | Allocations: 883)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4422)
+Completed 200 OK in 27ms (Views: 12.5ms | ActiveRecord: 3.3ms | Allocations: 6839)
+
+
+Started PATCH "/categories/1/tasks/1" for ::1 at 2021-12-01 13:27:50 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Edited Journal"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTask Update (1.6ms)[0m  [1m[33mUPDATE "tasks" SET "body" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["body", "Edited Journal"], ["updated_at", "2021-12-01 05:27:50.862580"], ["id", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1/tasks/1
+Completed 302 Found in 27ms (ActiveRecord: 11.8ms | Allocations: 5166)
+
+
+Started GET "/categories/1/tasks/1" for ::1 at 2021-12-01 13:27:50 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3180)
+Completed 200 OK in 18ms (Views: 7.7ms | ActiveRecord: 3.2ms | Allocations: 4885)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:27:55 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 4.4ms | Allocations: 997)
+  Rendered categories/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4274)
+Completed 200 OK in 18ms (Views: 11.4ms | ActiveRecord: 2.4ms | Allocations: 5452)
+
+
+Started GET "/categories/1/tasks/1/edit" for ::1 at 2021-12-01 13:28:47 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (2.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.9ms | Allocations: 537)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 630)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3766)
+Completed 200 OK in 29ms (Views: 10.5ms | ActiveRecord: 4.8ms | Allocations: 6053)
+
+
+Started GET "/categories/1/tasks/2/edit" for ::1 at 2021-12-01 13:28:56 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (3.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.5ms | Allocations: 537)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 642)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3853)
+Completed 200 OK in 30ms (Views: 16.8ms | ActiveRecord: 5.2ms | Allocations: 6045)
+
+
+Started PATCH "/categories/1/tasks/2" for ::1 at 2021-12-01 13:29:08 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Coding Journal App"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1/tasks/2
+Completed 302 Found in 19ms (ActiveRecord: 6.0ms | Allocations: 4081)
+
+
+Started GET "/categories/1/tasks/2" for ::1 at 2021-12-01 13:29:08 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3200)
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 2.0ms | Allocations: 4905)
+
+
+Started GET "/categories/1/tasks/2/edit" for ::1 at 2021-12-01 13:29:36 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.7ms | Allocations: 537)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 630)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3746)
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 2.2ms | Allocations: 5450)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:29:37 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.2ms | Allocations: 998)
+  Rendered categories/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4275)
+Completed 200 OK in 19ms (Views: 10.5ms | ActiveRecord: 3.4ms | Allocations: 5543)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-12-01 13:29:38 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.3ms | Allocations: 538)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 886)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4029)
+Completed 200 OK in 26ms (Views: 14.0ms | ActiveRecord: 1.8ms | Allocations: 6000)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-12-01 13:29:44 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"New Tasks"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (2.9ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "New Tasks"], ["created_at", "2021-12-01 05:29:44.341606"], ["updated_at", "2021-12-01 05:29:44.341606"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Redirected to http://localhost:3000/categories/1/tasks/4
+Completed 302 Found in 21ms (ActiveRecord: 10.3ms | Allocations: 3467)
+
+
+Started GET "/categories/1/tasks/4" for ::1 at 2021-12-01 13:29:44 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 3189)
+Completed 200 OK in 72ms (Views: 45.5ms | ActiveRecord: 1.8ms | Allocations: 4896)
+
+
+Started GET "/categories/1/tasks/4" for ::1 at 2021-12-01 13:30:19 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3435)
+Completed 200 OK in 35ms (Views: 6.8ms | ActiveRecord: 10.3ms | Allocations: 13749)
+
+
+Started GET "/categories/1/" for ::1 at 2021-12-01 13:30:22 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.0ms | Allocations: 2227)
+  Rendered categories/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2403)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5663)
+Completed 200 OK in 19ms (Views: 11.5ms | ActiveRecord: 2.4ms | Allocations: 7812)
+
+
+Started GET "/categories/1/tasks/4/edit" for ::1 at 2021-12-01 13:30:24 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.3ms | Allocations: 790)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 886)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4022)
+Completed 200 OK in 32ms (Views: 18.2ms | ActiveRecord: 4.9ms | Allocations: 6384)
+
+
+Started PATCH "/categories/1/tasks/4" for ::1 at 2021-12-01 13:30:26 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"New Tasks"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1
+Completed 302 Found in 19ms (ActiveRecord: 5.6ms | Allocations: 4575)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:30:26 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 4.1ms | Allocations: 1041)
+  Rendered categories/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4325)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 2.2ms | Allocations: 5502)
+
+
+Started GET "/categories/1/tasks/4/edit" for ::1 at 2021-12-01 13:30:32 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.3ms | Allocations: 537)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 631)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3825)
+Completed 200 OK in 25ms (Views: 9.8ms | ActiveRecord: 3.7ms | Allocations: 6044)
+
+
+Started PATCH "/categories/1/tasks/4" for ::1 at 2021-12-01 13:30:37 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"New Tasks"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1
+Completed 302 Found in 20ms (ActiveRecord: 6.1ms | Allocations: 4094)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:30:37 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 4.1ms | Allocations: 1041)
+  Rendered categories/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4331)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 2.4ms | Allocations: 5506)
+
+
+Started GET "/categories" for ::1 at 2021-12-01 13:30:39 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 5022)
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 2.2ms | Allocations: 5639)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:30:41 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 6.7ms | Allocations: 1141)
+  Rendered categories/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 4430)
+Completed 200 OK in 27ms (Views: 17.5ms | ActiveRecord: 3.5ms | Allocations: 6075)
+
+
+Started GET "/categories/1/tasks/4/edit" for ::1 at 2021-12-01 13:34:18 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.3ms | Allocations: 1101)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1473)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4946)
+Completed 200 OK in 43ms (Views: 10.2ms | ActiveRecord: 13.7ms | Allocations: 15942)
+
+
+Started PATCH "/categories/1/tasks/4" for ::1 at 2021-12-01 13:34:19 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"New Tasks"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1/tasks/4
+Completed 302 Found in 20ms (ActiveRecord: 5.9ms | Allocations: 5332)
+
+
+Started GET "/categories/1/tasks/4" for ::1 at 2021-12-01 13:34:19 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3325)
+Completed 200 OK in 18ms (Views: 8.5ms | ActiveRecord: 3.1ms | Allocations: 5174)
+
+
+Started GET "/categories/1/tasks/4" for ::1 at 2021-12-01 13:34:54 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3026)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3100)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.6ms | Allocations: 5653)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Category id: 1, name: "Coding", created_at: "2021-11-29 12:31:34.317197000 +0000", updated_at: "2021-11-29 12:31:34.317197000 +0000">):
+     6: </p>
+     7: <p>
+     8:     <strong>Description:</strong>
+     9:     <%= @category.body%>
+    10: </p>
+    11: 
+    12: <%# <%= link_to 'Edit', edit_task_path(@task) %> | %>
+  
+app/views/tasks/show.html.erb:9
+Started GET "/categories/1/tasks/4" for ::1 at 2021-12-01 13:35:04 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3814)
+Completed 200 OK in 19ms (Views: 9.6ms | ActiveRecord: 2.3ms | Allocations: 6567)
+
+
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/categories/1/tasks/4/edit" for ::1 at 2021-12-01 13:37:59 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.9ms | Allocations: 893)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4376)
+Completed 200 OK in 19ms (Views: 9.4ms | ActiveRecord: 2.2ms | Allocations: 6363)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:37:59 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.2ms | Allocations: 1703)
+  Rendered categories/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5460)
+Completed 200 OK in 22ms (Views: 13.1ms | ActiveRecord: 2.3ms | Allocations: 7997)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:38:34 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.7ms | Allocations: 1557)
+  Rendered categories/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 5530)
+Completed 200 OK in 23ms (Views: 15.4ms | ActiveRecord: 2.3ms | Allocations: 7656)
+
+
+Started GET "/categories/1/tasks/2/edit" for ::1 at 2021-12-01 13:38:35 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.4ms | Allocations: 945)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4654)
+Completed 200 OK in 32ms (Views: 16.8ms | ActiveRecord: 3.0ms | Allocations: 7714)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:39:22 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.5ms | Allocations: 1555)
+  Rendered categories/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2010)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 5528)
+Completed 200 OK in 23ms (Views: 14.0ms | ActiveRecord: 2.7ms | Allocations: 7740)
+
+
+Started GET "/categories/1/tasks/2" for ::1 at 2021-12-01 13:39:23 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:39:in `get_category'
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3620)
+Completed 200 OK in 26ms (Views: 12.5ms | ActiveRecord: 3.2ms | Allocations: 6671)
+
+
+Started GET "/categories" for ::1 at 2021-12-01 13:40:30 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1430)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 5129)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 1.9ms | Allocations: 5789)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:40:32 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 8.6ms | Allocations: 1208)
+  Rendered categories/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4605)
+Completed 200 OK in 28ms (Views: 17.3ms | ActiveRecord: 4.1ms | Allocations: 6243)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:40:47 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 4.8ms | Allocations: 1557)
+  Rendered categories/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 5530)
+Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 2.1ms | Allocations: 7588)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:43:11 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered tasks/_index.html.erb (Duration: 1.6ms | Allocations: 1372)
+  Rendered categories/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1786)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1861)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.2ms | Allocations: 3953)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>TASKS</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @tasks.each do |task| %>
+            <tr>
+                <td><%= task.id %></td>
+                <td><%= task.body %></td>
+                <td><%= link_to 'Edit', edit_category_task_path(@category.id, task) %></td>
+                <td><%= link_to 'Show', category_task_path(@category.id, task) %></td>
+                <td><%= link_to 'Delete', category_task_path(@category.id, task) method: :Delete, data: { confirm: 'Are you sure?'} %></td>
+                
+
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<%= link_to 'Create new task', new_category_task_path(@category) %>
+):
+1:    <h1>TASKS</h1>
+2:    
+3:    <table>
+4:        <thead>
+5:            <tr>
+6:                <th>Name</th>
+7:                <th>Body</th>
+8:            </tr>
+9:        </thead>
+10:    
+11:        <tbody>
+12:            <% @tasks.each do |task| %>
+13:                <tr>
+14:                    <td><%= task.id %></td>
+15:                    <td><%= task.body %></td>
+16:                    <td><%= link_to 'Edit', edit_category_task_path(@category.id, task) %></td>
+17:                    <td><%= link_to 'Show', category_task_path(@category.id, task) %></td>
+18:                    <td><%= link_to 'Delete', category_task_path(@category.id, task) method: :Delete, data: { confirm: 'Are you sure?'} %></td>
+19:                    
+20:    
+21:                </tr>
+22:            <% end %>
+23:        </tbody>
+24:    </table>
+25:    
+26:    <%= link_to 'Create new task', new_category_task_path(@category) %>
+  
+app/views/tasks/_index.html.erb:18: syntax error, unexpected label, expecting ')'
+app/views/tasks/_index.html.erb:18: syntax error, unexpected label, expecting ')'
+app/views/tasks/_index.html.erb:18: syntax error, unexpected label, expecting ')'
+app/views/tasks/_index.html.erb:18: syntax error, unexpected label, expecting ')'
+app/views/tasks/_index.html.erb:18: syntax error, unexpected label, expecting ')'
+app/views/tasks/_index.html.erb:18: syntax error, unexpected label, expecting ')'
+app/views/categories/show.html.erb:3
+Started GET "/categories/1" for ::1 at 2021-12-01 13:43:48 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.2ms | Allocations: 1740)
+  Rendered categories/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5734)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 2.4ms | Allocations: 7952)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:47:28 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 19.0ms | Allocations: 6040)
+  Rendered categories/show.html.erb within layouts/application (Duration: 19.7ms | Allocations: 6217)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 9485)
+Completed 200 OK in 47ms (Views: 20.1ms | ActiveRecord: 13.4ms | Allocations: 15972)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:47:28 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 4.4ms | Allocations: 1293)
+  Rendered categories/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1442)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4570)
+Completed 200 OK in 20ms (Views: 11.6ms | ActiveRecord: 2.5ms | Allocations: 5812)
+
+
+Started DELETE "/categories/1/tasks/4" for ::1 at 2021-12-01 13:47:33 +0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTask Destroy (1.6ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+Redirected to http://localhost:3000/categories/1/tasks/4
+Completed 302 Found in 25ms (ActiveRecord: 10.8ms | Allocations: 3932)
+
+
+Started GET "/categories/1/tasks/4" for ::1 at 2021-12-01 13:47:33 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 2.8ms | Allocations: 1836)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=4):
+  
+app/controllers/tasks_controller.rb:22:in `show'
+Started GET "/categories/1/tasks/4" for ::1 at 2021-12-01 13:48:51 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"4"}
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+Completed 404 Not Found in 15ms (ActiveRecord: 4.7ms | Allocations: 1814)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=4):
+  
+app/controllers/tasks_controller.rb:22:in `show'
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 13:49:06 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (2.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1298)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 4667)
+Completed 200 OK in 31ms (Views: 18.0ms | ActiveRecord: 4.3ms | Allocations: 6485)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 13:49:58 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 5142)
+Completed 200 OK in 22ms (Views: 13.1ms | ActiveRecord: 3.2ms | Allocations: 7278)
+
+
+Started GET "/categories/1/tasks/2" for ::1 at 2021-12-01 13:50:00 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3343)
+Completed 200 OK in 21ms (Views: 6.7ms | ActiveRecord: 4.8ms | Allocations: 5823)
+
+
+Started DELETE "/categories/1/tasks/2" for ::1 at 2021-12-01 13:50:13 +0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTask Destroy (1.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+Redirected to http://localhost:3000/categories/1/tasks/2
+Completed 302 Found in 23ms (ActiveRecord: 10.4ms | Allocations: 3351)
+
+
+Started GET "/categories/1/tasks/2" for ::1 at 2021-12-01 13:50:13 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 2.9ms | Allocations: 1820)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=2):
+  
+app/controllers/tasks_controller.rb:22:in `show'
+Started GET "/categories/1/tasks/2" for ::1 at 2021-12-01 13:52:36 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"2"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+Completed 404 Not Found in 26ms (ActiveRecord: 12.0ms | Allocations: 7545)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=2):
+  
+app/controllers/tasks_controller.rb:22:in `show'
+Started GET "/categories/" for ::1 at 2021-12-01 13:52:39 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1561)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4929)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 1.3ms | Allocations: 6222)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:52:40 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 14.8ms | Allocations: 5004)
+  Rendered categories/show.html.erb within layouts/application (Duration: 18.1ms | Allocations: 5439)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 8490)
+Completed 200 OK in 35ms (Views: 24.2ms | ActiveRecord: 3.8ms | Allocations: 10785)
+
+
+Started DELETE "/categories/1/tasks/3" for ::1 at 2021-12-01 13:52:45 +0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category_id"=>"1", "id"=>"3"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTask Destroy (1.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+Redirected to http://localhost:3000/categories/1/tasks/3
+Completed 302 Found in 23ms (ActiveRecord: 10.9ms | Allocations: 3395)
+
+
+Started GET "/categories/1/tasks/3" for ::1 at 2021-12-01 13:52:45 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"3"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+Completed 404 Not Found in 10ms (ActiveRecord: 2.7ms | Allocations: 1821)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=3):
+  
+app/controllers/tasks_controller.rb:22:in `show'
+Started GET "/categories/1/" for ::1 at 2021-12-01 13:53:11 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 4.8ms | Allocations: 1419)
+  Rendered categories/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5414)
+Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 2.4ms | Allocations: 7472)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-12-01 13:53:12 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.4ms | Allocations: 999)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4889)
+Completed 200 OK in 26ms (Views: 14.8ms | ActiveRecord: 3.0ms | Allocations: 7481)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-12-01 13:53:18 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Another Task"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (1.4ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "Another Task"], ["created_at", "2021-12-01 05:53:18.048232"], ["updated_at", "2021-12-01 05:53:18.048232"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Redirected to http://localhost:3000/categories/1/tasks/5
+Completed 302 Found in 21ms (ActiveRecord: 9.2ms | Allocations: 3741)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:53:18 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3342)
+Completed 200 OK in 17ms (Views: 8.4ms | ActiveRecord: 2.3ms | Allocations: 5189)
+
+
+Started GET "/categories/1/" for ::1 at 2021-12-01 13:53:21 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 6.6ms | Allocations: 1085)
+  Rendered categories/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 4362)
+Completed 200 OK in 25ms (Views: 15.7ms | ActiveRecord: 3.4ms | Allocations: 5539)
+
+
+Started GET "/categories/1/" for ::1 at 2021-12-01 13:53:21 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 3.7ms | Allocations: 1080)
+  Rendered categories/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4357)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 2.3ms | Allocations: 5531)
+
+
+Started DELETE "/categories/1/tasks/1" for ::1 at 2021-12-01 13:53:32 +0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTask Destroy (1.6ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+Redirected to http://localhost:3000/categories/1/tasks/1
+Completed 302 Found in 22ms (ActiveRecord: 10.6ms | Allocations: 3314)
+
+
+Started GET "/categories/1/tasks/1" for ::1 at 2021-12-01 13:53:32 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 2.6ms | Allocations: 1820)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=1):
+  
+app/controllers/tasks_controller.rb:22:in `show'
+Started GET "/categories/" for ::1 at 2021-12-01 13:54:17 +0800
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  Rendered categories/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 4074)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 7592)
+Completed 200 OK in 31ms (Views: 18.8ms | ActiveRecord: 7.5ms | Allocations: 10346)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:54:18 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 17.9ms | Allocations: 6008)
+  Rendered categories/show.html.erb within layouts/application (Duration: 20.2ms | Allocations: 6464)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 9658)
+Completed 200 OK in 43ms (Views: 21.6ms | ActiveRecord: 9.1ms | Allocations: 12831)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-12-01 13:54:19 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.9ms | Allocations: 1007)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1425)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4748)
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 1.4ms | Allocations: 7283)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-12-01 13:54:23 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Finals Taslk"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (1.4ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "Finals Taslk"], ["created_at", "2021-12-01 05:54:23.932906"], ["updated_at", "2021-12-01 05:54:23.932906"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Redirected to http://localhost:3000/categories/1/tasks/6
+Completed 302 Found in 21ms (ActiveRecord: 9.2ms | Allocations: 3769)
+
+
+Started GET "/categories/1/tasks/6" for ::1 at 2021-12-01 13:54:23 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"6"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3341)
+Completed 200 OK in 14ms (Views: 6.5ms | ActiveRecord: 1.9ms | Allocations: 5351)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-12-01 13:54:25 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.0ms | Allocations: 513)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 644)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3760)
+Completed 200 OK in 18ms (Views: 9.8ms | ActiveRecord: 1.6ms | Allocations: 5075)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:54:25 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 4.8ms | Allocations: 1085)
+  Rendered categories/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4382)
+Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 2.7ms | Allocations: 5643)
+
+
+Started DELETE "/categories/1/tasks/6" for ::1 at 2021-12-01 13:54:30 +0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category_id"=>"1", "id"=>"6"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTask Destroy (1.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:37:in `destroy'
+Redirected to http://localhost:3000/categories/1
+Completed 302 Found in 22ms (ActiveRecord: 10.8ms | Allocations: 3335)
+
+
+Started GET "/categories/1" for ::1 at 2021-12-01 13:54:30 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:60:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTask Load (2.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/_index.html.erb:12
+  Rendered tasks/_index.html.erb (Duration: 5.9ms | Allocations: 974)
+  Rendered categories/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4251)
+Completed 200 OK in 18ms (Views: 11.0ms | ActiveRecord: 3.3ms | Allocations: 5426)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:54:36 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (3.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 55)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3275)
+Completed 200 OK in 26ms (Views: 11.1ms | ActiveRecord: 5.4ms | Allocations: 5487)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:54:55 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 10.9ms | Allocations: 4435)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4509)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.1ms | Allocations: 7069)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks_path' for #<ActionView::Base:0x0000000001e668>
+Did you mean?  asset_path):
+    10: </p>
+    11: 
+    12: <%# <%= link_to 'Edit', edit_task_path(@task) %> | %>
+    13: <%= link_to 'Back', tasks_path %>
+  
+app/views/tasks/show.html.erb:13
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:55:30 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3898)
+Completed 200 OK in 21ms (Views: 11.0ms | ActiveRecord: 2.5ms | Allocations: 6651)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 13:55:31 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (3.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4450)
+Completed 200 OK in 26ms (Views: 12.3ms | ActiveRecord: 5.4ms | Allocations: 6382)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:55:33 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3311)
+Completed 200 OK in 26ms (Views: 10.4ms | ActiveRecord: 4.3ms | Allocations: 5528)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:56:07 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4373)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4447)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.1ms | Allocations: 6995)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `task' for #<ActionView::Base:0x0000000001ec80>
+Did you mean?  @task):
+     9:     <%= @task.body%>
+    10: </p>
+    11: 
+    12: <%= link_to 'Edit', edit_category_task_path(@category.id, task) %> |
+    13: <%= link_to 'Back', category_tasks_path %>
+  
+app/views/tasks/show.html.erb:12
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:56:50 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 402)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3941)
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 2.0ms | Allocations: 6694)
+
+
+Started GET "/categories/1/tasks/5/edit" for ::1 at 2021-12-01 13:56:51 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.6ms | Allocations: 877)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4340)
+Completed 200 OK in 26ms (Views: 12.4ms | ActiveRecord: 3.1ms | Allocations: 6907)
+
+
+Started PATCH "/categories/1/tasks/5" for ::1 at 2021-12-01 13:56:55 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Another Task"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1/tasks/5
+Completed 302 Found in 20ms (ActiveRecord: 6.1ms | Allocations: 4468)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:56:55 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3275)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 1.9ms | Allocations: 4980)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 13:56:56 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (2.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4400)
+Completed 200 OK in 24ms (Views: 11.7ms | ActiveRecord: 3.6ms | Allocations: 6190)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:56:58 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (4.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3364)
+Completed 200 OK in 26ms (Views: 10.9ms | ActiveRecord: 5.6ms | Allocations: 5556)
+
+
+Started GET "/categories/1/tasks/5/edit" for ::1 at 2021-12-01 13:56:59 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.7ms | Allocations: 537)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 642)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3838)
+Completed 200 OK in 23ms (Views: 10.5ms | ActiveRecord: 2.9ms | Allocations: 6041)
+
+
+Started GET "/categories/1/tasks/5/edit" for ::1 at 2021-12-01 13:57:35 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.4ms | Allocations: 952)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4865)
+Completed 200 OK in 22ms (Views: 11.9ms | ActiveRecord: 2.4ms | Allocations: 7455)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 13:57:36 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1320)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4454)
+Completed 200 OK in 25ms (Views: 12.1ms | ActiveRecord: 3.1ms | Allocations: 6378)
+
+
+Started GET "/categories/1/tasks/5/edit" for ::1 at 2021-12-01 13:57:37 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (2.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.8ms | Allocations: 538)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.8ms | Allocations: 669)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3807)
+Completed 200 OK in 34ms (Views: 19.1ms | ActiveRecord: 3.7ms | Allocations: 6092)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 13:57:39 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (2.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4215)
+Completed 200 OK in 29ms (Views: 17.5ms | ActiveRecord: 4.1ms | Allocations: 5816)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 13:57:43 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (2.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3440)
+Completed 200 OK in 26ms (Views: 11.2ms | ActiveRecord: 3.6ms | Allocations: 5861)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 13:57:45 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (3.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1420)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 4670)
+Completed 200 OK in 27ms (Views: 16.0ms | ActiveRecord: 5.1ms | Allocations: 5842)
+
+
+Started GET "/categories/1/tasks/5/edit" for ::1 at 2021-12-01 13:57:46 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (3.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.9ms | Allocations: 537)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 669)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3861)
+Completed 200 OK in 27ms (Views: 12.3ms | ActiveRecord: 4.9ms | Allocations: 6069)
+
+
+Started GET "/categories/1/tasks/5/edit" for ::1 at 2021-12-01 14:01:03 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.2ms | Allocations: 954)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4852)
+Completed 200 OK in 21ms (Views: 11.5ms | ActiveRecord: 2.1ms | Allocations: 7447)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:01:08 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (2.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1320)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4454)
+Completed 200 OK in 25ms (Views: 11.7ms | ActiveRecord: 3.8ms | Allocations: 6379)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-12-01 14:08:23 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1440)
+
+
+  
+ArgumentError (Unknown key: :order. Valid keys are: :class_name, :anonymous_class, :primary_key, :foreign_key, :dependent, :validate, :inverse_of, :strict_loading, :autosave, :before_add, :after_add, :before_remove, :after_remove, :extend, :counter_cache, :join_table, :index_errors, :ensuring_owner_was):
+  
+app/models/category.rb:6:in `<class:Category>'
+app/models/category.rb:1:in `<main>'
+app/controllers/tasks_controller.rb:44:in `get_category'
+Started GET "/categories/1/tasks/new" for ::1 at 2021-12-01 14:09:12 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.3ms | Allocations: 834)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4391)
+Completed 200 OK in 49ms (Views: 11.7ms | ActiveRecord: 11.7ms | Allocations: 17264)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-12-01 14:09:20 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"New Task"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (1.7ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "New Task"], ["created_at", "2021-12-01 06:09:20.131229"], ["updated_at", "2021-12-01 06:09:20.131229"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Redirected to http://localhost:3000/categories/1/tasks/7
+Completed 302 Found in 19ms (ActiveRecord: 8.0ms | Allocations: 3756)
+
+
+Started GET "/categories/1/tasks/7" for ::1 at 2021-12-01 14:09:20 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"7"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3443)
+Completed 200 OK in 18ms (Views: 9.3ms | ActiveRecord: 2.1ms | Allocations: 5523)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:09:22 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/tasks/index.html.erb:12
+  Rendered tasks/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4490)
+Completed 200 OK in 22ms (Views: 11.5ms | ActiveRecord: 4.6ms | Allocations: 6135)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:11:17 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3639)
+Completed 200 OK in 44ms (Views: 8.5ms | ActiveRecord: 15.4ms | Allocations: 15290)
+
+
+Started GET "/categories/1/tasks/5/edit" for ::1 at 2021-12-01 14:11:20 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.7ms | Allocations: 779)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 922)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4137)
+Completed 200 OK in 36ms (Views: 22.0ms | ActiveRecord: 3.3ms | Allocations: 6706)
+
+
+Started PATCH "/categories/1/tasks/5" for ::1 at 2021-12-01 14:11:25 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Another Task edited"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTask Update (1.2ms)[0m  [1m[33mUPDATE "tasks" SET "body" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["body", "Another Task edited"], ["updated_at", "2021-12-01 06:11:25.111830"], ["id", 5]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1/tasks/5
+Completed 302 Found in 26ms (ActiveRecord: 11.6ms | Allocations: 5348)
+
+
+Started GET "/categories/1/tasks/5" for ::1 at 2021-12-01 14:11:25 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"5"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3288)
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 2.3ms | Allocations: 4993)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:11:27 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3509)
+Completed 200 OK in 23ms (Views: 9.4ms | ActiveRecord: 4.0ms | Allocations: 5888)
+
+
+Started GET "/categories/1/tasks/new" for ::1 at 2021-12-01 14:11:34 +0800
+Processing by TasksController#new as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.7ms | Allocations: 514)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 658)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3861)
+Completed 200 OK in 25ms (Views: 13.0ms | ActiveRecord: 3.0ms | Allocations: 5682)
+
+
+Started POST "/categories/1/tasks" for ::1 at 2021-12-01 14:11:40 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"Coding tasks"}, "commit"=>"Create Task", "category_id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTask Create (1.4ms)[0m  [1m[32mINSERT INTO "tasks" ("category_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category_id", 1], ["body", "Coding tasks"], ["created_at", "2021-12-01 06:11:40.302360"], ["updated_at", "2021-12-01 06:11:40.302360"]]
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14:in `create'
+Redirected to http://localhost:3000/categories/1/tasks/8
+Completed 302 Found in 21ms (ActiveRecord: 9.1ms | Allocations: 3381)
+
+
+Started GET "/categories/1/tasks/8" for ::1 at 2021-12-01 14:11:40 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"8"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3275)
+Completed 200 OK in 15ms (Views: 7.4ms | ActiveRecord: 2.4ms | Allocations: 4979)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:11:44 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3569)
+Completed 200 OK in 22ms (Views: 8.7ms | ActiveRecord: 3.4ms | Allocations: 5980)
+
+
+Started GET "/categories/1/tasks/7/edit" for ::1 at 2021-12-01 14:11:48 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"category_id"=>"1", "id"=>"7"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.4ms | Allocations: 537)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3892)
+Completed 200 OK in 24ms (Views: 11.1ms | ActiveRecord: 3.9ms | Allocations: 6081)
+
+
+Started PATCH "/categories/1/tasks/7" for ::1 at 2021-12-01 14:11:53 +0800
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"body"=>"New Task editing"}, "commit"=>"Update Task", "category_id"=>"1", "id"=>"7"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTask Update (1.3ms)[0m  [1m[33mUPDATE "tasks" SET "body" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["body", "New Task editing"], ["updated_at", "2021-12-01 06:11:53.061818"], ["id", 7]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Redirected to http://localhost:3000/categories/1/tasks/7
+Completed 302 Found in 25ms (ActiveRecord: 9.9ms | Allocations: 4857)
+
+
+Started GET "/categories/1/tasks/7" for ::1 at 2021-12-01 14:11:53 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"category_id"=>"1", "id"=>"7"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3275)
+Completed 200 OK in 18ms (Views: 9.0ms | ActiveRecord: 2.5ms | Allocations: 4979)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:11:54 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (2.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3572)
+Completed 200 OK in 33ms (Views: 18.3ms | ActiveRecord: 3.6ms | Allocations: 5970)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:14:37 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4222)
+Completed 200 OK in 19ms (Views: 10.2ms | ActiveRecord: 2.1ms | Allocations: 7061)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:14:45 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 673)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4195)
+Completed 200 OK in 21ms (Views: 11.5ms | ActiveRecord: 2.2ms | Allocations: 7215)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:14:58 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 676)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4211)
+Completed 200 OK in 21ms (Views: 10.3ms | ActiveRecord: 2.3ms | Allocations: 7232)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:15:03 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4199)
+Completed 200 OK in 22ms (Views: 10.2ms | ActiveRecord: 3.0ms | Allocations: 7219)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:15:16 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 678)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4200)
+Completed 200 OK in 21ms (Views: 10.5ms | ActiveRecord: 2.3ms | Allocations: 7220)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:15:27 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 679)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4201)
+Completed 200 OK in 22ms (Views: 12.1ms | ActiveRecord: 2.0ms | Allocations: 7221)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:15:42 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4199)
+Completed 200 OK in 21ms (Views: 11.4ms | ActiveRecord: 1.9ms | Allocations: 7219)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:15:53 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4227)
+Completed 200 OK in 22ms (Views: 11.4ms | ActiveRecord: 2.3ms | Allocations: 7255)
+
+
+Started GET "/categories/1/tasks" for ::1 at 2021-12-01 14:16:04 +0800
+Processing by TasksController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:44:in `get_category'
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/controllers/tasks_controller.rb:5:in `sort_by'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4214)
+Completed 200 OK in 20ms (Views: 10.6ms | ActiveRecord: 2.0ms | Allocations: 7236)
+
+

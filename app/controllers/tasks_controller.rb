@@ -2,7 +2,7 @@ class TasksController < ApplicationController
   before_action :get_category
 
   def index
-    @tasks = @category.tasks
+    @tasks = @category.tasks.sort_by &:created_at
   end
 
   def new
@@ -12,7 +12,7 @@ class TasksController < ApplicationController
   def create
     @task = @category.tasks.build(task_params)
     if @task.save
-      redirect_to @category
+      redirect_to category_task_path(@category, @task)
     else
       render :new
     end
@@ -24,6 +24,18 @@ class TasksController < ApplicationController
 
   def edit
     @task = Task.find(params[:id])
+  end
+
+  def update
+    @task = Task.find(params[:id])
+    if @task.update(task_params)
+      redirect_to category_task_path(@category, @task)
+    end
+  end
+
+  def destroy
+    @task = Task.find(params[:id]).destroy
+    redirect_to category_path(@category)
   end
 
   private

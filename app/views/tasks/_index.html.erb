@@ -13,6 +13,11 @@
             <tr>
                 <td><%= task.id %></td>
                 <td><%= task.body %></td>
+                <td><%= link_to 'Edit', edit_category_task_path(@category.id, task) %></td>
+                <td><%= link_to 'Show', category_task_path(@category.id, task) %></td>
+                <td><%= link_to 'Delete', category_task_path(@category.id, task), method: :delete, data: { confirm: 'Are you sure?'} %></td>
+                
+
             </tr>
         <% end %>
     </tbody>
