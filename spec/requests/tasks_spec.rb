@@ -13,29 +13,38 @@
 # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
 RSpec.describe "Tasks", type: :request do
+  before(:example) do
+    @category = Category.create(name: 'test')
+    @task = Task.create(body: 'testing')
+  end
   
    describe "GET index of tasks" do
     it "renders a successful response" do
-      category = Category.create(name: 'Test')
-      get category_tasks_path(category.id)
+      # category = Category.create(name: 'Test')
+      get category_tasks_path(@category.id)
+
       expect(response).to have_http_status(200)
     end
   end
 
-  # describe "GET /show" do
-  #   it "renders a successful response" do
-  #     task = Task.create! valid_attributes
-  #     get task_url(task)
-  #     expect(response).to be_successful
+  # describe "Get individual tasks" do
+  #   it "displays description of the task" do
+      
+  #     puts @category.id
+  #     puts @task.body
+      
+  #     get category_task_path(@category.id, @task.id)
+      
+  #     expect(response).to have_http_status(200)
   #   end
   # end
 
-  # describe "GET /new" do
-  #   it "renders a successful response" do
-  #     get new_task_url
-  #     expect(response).to be_successful
-  #   end
-  # end
+  describe "GET new method" do
+    it "directs to new task" do
+      get new_category_task_path(@category.id)
+      expect(response).to have_http_status(200)
+    end
+  end
 
   # describe "GET /edit" do
   #   it "render a successful response" do
@@ -45,33 +54,13 @@ RSpec.describe "Tasks", type: :request do
   #   end
   # end
 
-  # describe "POST /create" do
-  #   context "with valid parameters" do
-  #     it "creates a new Task" do
-  #       expect {
-  #         post tasks_url, params: { task: valid_attributes }
-  #       }.to change(Task, :count).by(1)
-  #     end
-
-  #     it "redirects to the created task" do
-  #       post tasks_url, params: { task: valid_attributes }
-  #       expect(response).to redirect_to(task_url(Task.last))
-  #     end
-  #   end
-
-  #   context "with invalid parameters" do
-  #     it "does not create a new Task" do
-  #       expect {
-  #         post tasks_url, params: { task: invalid_attributes }
-  #       }.to change(Task, :count).by(0)
-  #     end
-
-  #     it "renders a successful response (i.e. to display the 'new' template)" do
-  #       post tasks_url, params: { task: invalid_attributes }
-  #       expect(response).to be_successful
-  #     end
-  #   end
-  # end
+  describe "POST /create" do
+    it "creates a new Task" do
+      expect {
+        post tasks_url, params: { task: { body: @task.body } }
+      }.to change(Task, :count).by(+1)
+    end
+  end
 
   # describe "PATCH /update" do
   #   context "with valid parameters" do
