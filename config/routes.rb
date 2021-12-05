@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  get '/today' => 'tasks#today', as: 'today_tasks'
     
   devise_for :users
   resources :categories do

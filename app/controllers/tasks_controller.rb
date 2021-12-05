@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_action :get_category
+  before_action :get_category, except: [:today]
 
   def index
     @tasks = @category.tasks.sort_by &:created_at
@@ -36,6 +36,10 @@ class TasksController < ApplicationController
   def destroy
     @task = Task.find(params[:id]).destroy
     redirect_to category_path(@category)
+  end
+
+  def today
+    @tasks = Task.where("Date(created_at) = ?", Date.today)
   end
 
   private

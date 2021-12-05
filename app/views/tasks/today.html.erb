@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <th><h1>Today's Tasks</h1></th>
+    </thead>
+
+    <tbody>
+        <% @tasks.each do |today| %>
+            <tr>
+                <td><% today.name %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<%= link_to 'Back to categories', categories_path %>

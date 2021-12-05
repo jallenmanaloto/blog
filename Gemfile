@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
+gem 'factory_bot_rails'
+gem 'faker'
 
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
