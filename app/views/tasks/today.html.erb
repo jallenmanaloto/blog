@@ -6,7 +6,10 @@
     <tbody>
         <% @tasks.each do |today| %>
             <tr>
-                <td><% today.name %></td>
+
+                <% puts today %>
+                <td><%= today.name %></td>
+                <td><%= today.body %></td>
             </tr>
         <% end %>
     </tbody>

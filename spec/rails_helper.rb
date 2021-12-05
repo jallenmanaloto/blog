@@ -64,7 +64,7 @@ RSpec.configure do |config|
 
   config.include Devise::Test::IntegrationHelpers
   config.include FactoryBot::Syntax::Methods
-  config.use_transactional_fixtures = true
+  # config.use_transactional_fixtures = true
 
   FactoryBot.register_strategy(:atrr_strat, AttributeStrategy)
 end

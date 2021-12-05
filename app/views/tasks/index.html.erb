@@ -1,4 +1,4 @@
-<h1>TASKS</h1>
+<h1><%= @category.name %></h1>
 
 <br/>
 <table>
@@ -16,7 +16,7 @@
                 <td><%= task.id %></td>
                 <td><%= task.name %></td>
                 <td><%= task.body %></td>
-                <td><%= task.task_date %></td>
+                <td><%= task.created_at %></td>
                 <td><%= link_to 'Edit', edit_category_task_path(@category.id, task) %></td>
                 <td><%= link_to 'Show', category_task_path(@category.id, task) %></td>
                 <td><%= link_to 'Delete', category_task_path(@category.id, task), method: :delete, data: { confirm: 'Are you sure?'} %></td>
@@ -27,5 +27,6 @@
 <br/>
 <br/>
 
-<%= link_to 'Add Task', new_category_task_path(@category) %>
+<%= link_to 'Add Task', new_category_task_path(@category) %> | 
+<%= link_to 'Back', categories_path %>
 

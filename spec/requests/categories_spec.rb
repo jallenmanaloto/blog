@@ -4,9 +4,9 @@ describe "/categories", type: :request do
 
   # Test to get the root page of Category with successful response
   describe "get /index" do
-    # before do
-    #   sign_in create(:user)
-    # end
+    before do
+      sign_in create(:user)
+    end
 
     it "shows the index page" do
       get categories_path

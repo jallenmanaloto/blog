@@ -20,7 +20,6 @@ RSpec.describe "Tasks", type: :request do
   
    describe "GET index of tasks" do
     it "renders a successful response" do
-      # category = Category.create(name: 'Test')
       get category_tasks_path(@category.id)
 
       expect(response).to have_http_status(200)
@@ -31,7 +30,7 @@ RSpec.describe "Tasks", type: :request do
   #   it "displays description of the task" do
       
   #     puts @category.id
-  #     puts @task.body
+  #     puts @category.first.body
       
   #     get category_task_path(@category.id, @task.id)
       
@@ -57,7 +56,7 @@ RSpec.describe "Tasks", type: :request do
   describe "POST /create" do
     it "creates a new Task" do
       expect {
-        post tasks_url, params: { task: { body: @task.body } }
+        post category_tasks_path(@category.id), params: { task: { body: @task.body } }
       }.to change(Task, :count).by(+1)
     end
   end
