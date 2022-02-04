@@ -11962,3 +11962,38 @@ Processing by CategoriesController#index as HTML
 Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 2.6ms | Allocations: 8159)
 
 
+Started GET "/" for ::1 at 2022-02-04 15:20:34 +0800
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:15
+  Rendered categories/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 4634)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jallen/codes/Blog/hello/public/packs
+[Webpacker] warning ../../package.json: No license field
+
+[Webpacker] Hash: 4c43430d6483df4a5347
+Version: webpack 4.46.0
+Time: 6487ms
+Built at: 02/04/2022 3:20:42 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ce29c92c8a3b7bb60ffc.js    880 KiB  application  [emitted] [immutable]  application
+js/application-ce29c92c8a3b7bb60ffc.js.map    925 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ce29c92c8a3b7bb60ffc.js js/application-ce29c92c8a3b7bb60ffc.js.map
+[0] multi ./app/javascript/packs/application.js ./app/javascript/packs/application.scss 40 bytes {application} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/packs/application.scss 743 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8172.8ms | Allocations: 13337)
+Completed 200 OK in 8211ms (Views: 8169.6ms | ActiveRecord: 17.7ms | Allocations: 25698)
+
+
